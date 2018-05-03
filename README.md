@@ -1,5 +1,7 @@
 # Speech to Text Python command
 
+Fork from rmotr/speech-to-text to add Python 3 support.
+
 Simple command line tool to create text transcripts out of audio files using [IBM Watson Speech to Text](https://www.ibm.com/watson/developercloud/speech-to-text.html).
 
 ## Install
@@ -7,20 +9,20 @@ Simple command line tool to create text transcripts out of audio files using [IB
 Using PyPi is the easiest way:
 
 ```bash
-$ pip install speech-to-text
+$ pip3 install -e git+https://github.com/isalgueiro/speech-to-text#egg=speech-to-text
 ```
 
 Or installing the dev version:
 
 ```bash
-$ git clone https://github.com/rmotr/speech-to-text
+$ git clone https://github.com/isalgueiro/speech-to-text
 $ mkvirtualenv speech-to-text
 $ pip install -r requirements.txt
 ```
 
 ## Usage
 
-The first thing you'll need to do is **get your Bluemix Username and Password**. This is a tedious process, if you have issues, we've written [a blog post that describes how to do it](https://blog.rmotr.com/how-we-use-ibm-watson-speech-to-text-to-transcribe-our-classes-9f59cafdb4b0#.af7b1d909). Once you have your username and password you can do:
+The first thing you'll need to do is **get your Bluemix Username and Password**. This is a tedious process, if you have issues, rmotr have written [a blog post that describes how to do it](https://blog.rmotr.com/how-we-use-ibm-watson-speech-to-text-to-transcribe-our-classes-9f59cafdb4b0#.af7b1d909). Once you have your username and password you can do:
 
 ```bash
 $ speech_to_text -u <MY-USERNAME> -p <MY-PASSWORD> -f html -i <AUDIO-FILE> transcript.html
