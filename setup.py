@@ -64,14 +64,12 @@ setup(
     packages=[package_name],
     maintainer='Santiago Basulto',
     install_requires=[
-        "progressbar",
+        "progressbar33",
         "click==6.7",
         "watson-developer-cloud==0.25.1",
         "PyYAML==3.12"
     ],
-    dependency_links=[
-        "https://github.com/niltonvolpato/python-progressbar/tarball/master#egg=progressbar"
-    ],
+    dependency_links=[],
     tests_require=[
         "mock==2.0.0",
         "pytest==3.0.6"
